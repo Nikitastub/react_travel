@@ -3,8 +3,7 @@ import '../App.css';
 import  tour1 from '../img/tour-1.jpeg'
 import  tour2 from '../img/tour-2.jpeg'
 
-export function Tours() {
-  return (
+export const Tours = () =>
     <div className="tours" id="articles">
             <div className="wrapper-full">
                 <div className="tours__wrap">
@@ -39,5 +38,3 @@ export function Tours() {
                 </div>
             </div>
         </div>
-    );
-}

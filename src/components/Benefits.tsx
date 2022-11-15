@@ -4,8 +4,7 @@ import  church from '../img/church-ico.svg'
 import  man from '../img/man-ico.svg'
 import  shop from '../img/shop-ico.png'
 
-export function Benefits() {
-  return (
+export const Benefits = () =>
     <section className="benefits">
             <div className="benefits__wrap">
                 <h2 className="benefits__title">
@@ -57,5 +56,3 @@ export function Benefits() {
                 </div>
             </div>
         </section>
-    );
-}

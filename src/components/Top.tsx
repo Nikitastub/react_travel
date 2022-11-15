@@ -7,8 +7,7 @@ import  top4 from '../img/top-4.jpeg'
 import  top5 from '../img/top-5.jpeg'
 import  top6 from '../img/top-6.jpeg'
 
-export function Top() {
-  return (
+export const Top = () => 
     <div className="top" id="locations">
             <div className="wrapper-full">
                 <h2 className="top__header section-title">
@@ -138,5 +137,3 @@ export function Top() {
                 </div>
             </div>
         </div>
-    );
-}

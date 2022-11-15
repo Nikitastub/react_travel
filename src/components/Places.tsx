@@ -6,8 +6,7 @@ import  place3 from '../img/place-3.jpeg'
 import  place4 from '../img/place-4.jpeg'
 import  place5 from '../img/place-5.jpeg'
 
-export function Places() {
-  return (
+export const Places = () => 
     <section className="places">
             <div className="wrapper-full">
                 <div className="places__capture">
@@ -57,5 +56,3 @@ export function Places() {
                 </div>
             </div>
         </section>
-    );
-}

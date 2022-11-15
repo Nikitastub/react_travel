@@ -2,8 +2,7 @@ import React from 'react';
 import '../App.css';
 import headerLogo from '../img/odigo-logo.svg'
 
-export function Header() {
-  return (
+export const Header = () =>
     <div className="header">
     <div className="wrapper">
         <div className="header__wrapper">
@@ -31,5 +30,3 @@ export function Header() {
         </div>
     </div>
   </div>
-    );
-}
