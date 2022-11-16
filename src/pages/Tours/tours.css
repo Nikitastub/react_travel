@@ -1,0 +1,42 @@
+/* Tours start */
+
+.tours {
+    margin-bottom: 8.5rem;
+  }
+  
+  .tours__tour {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 5rem;
+  }
+  
+  .tours__tour-pic {
+    grid-column: span 1;
+  }
+  
+  .tours__tour-info {
+    grid-column: span 1;
+    max-width: 32.5rem;
+    margin: auto auto;
+  }
+  
+  .tours__tour-title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 5.5rem;
+  }
+  
+  .tours__tour-desc {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 58px;
+  }
+  
+  .tours__tour-more:hover {
+    opacity: .75;
+  }
+  
+  /* Tours end */

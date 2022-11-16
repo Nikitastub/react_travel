@@ -1,8 +1,8 @@
 import React from 'react';
-import '../App.css';
-import  church from '../img/church-ico.svg'
-import  man from '../img/man-ico.svg'
-import  shop from '../img/shop-ico.png'
+import { Link } from '../../components/Link/Link';
+import  church from '../../img/church-ico.svg'
+import  man from '../../img/man-ico.svg'
+import  shop from '../../img/shop-ico.png'
 
 export const Benefits = () =>
     <section className="benefits">
@@ -21,9 +21,7 @@ export const Benefits = () =>
                         <p className="benefits__card-desc">
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                         </p>
-                        <a href="#" className="benefits__card-more base-link link-shape">
-                            LEARN MORE
-                        </a>
+                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' />
                     </div>
                     <div className="benefits__card">
                         <div className="benefits__card-img">
@@ -35,9 +33,7 @@ export const Benefits = () =>
                         <p className="benefits__card-desc">
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                         </p>
-                        <a href="#" className="benefits__card-more base-link link-shape">
-                            LEARN MORE
-                        </a>
+                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' />
                     </div>
                     <div className="benefits__card">
                         <div className="benefits__card-img">
@@ -49,9 +45,7 @@ export const Benefits = () =>
                         <p className="benefits__card-desc">
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                         </p>
-                        <a href="#" className="benefits__card-more base-link link-shape">
-                            LEARN MORE
-                        </a>
+                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' />
                     </div>
                 </div>
             </div>

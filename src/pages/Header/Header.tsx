@@ -1,6 +1,5 @@
 import React from 'react';
-import '../App.css';
-import headerLogo from '../img/odigo-logo.svg'
+import headerLogo from '../../img/odigo-logo.svg'
 
 export const Header = () =>
     <div className="header">
