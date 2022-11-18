@@ -1,5 +1,5 @@
 import React from "react";
-import { IPlace } from "./Place/placeModel";
+import { IPlace } from "./placeModel";
 
 export const Place = (place: IPlace) =>
     <div className={`places__card places__card-${place.size}`}>

@@ -48,6 +48,7 @@
     padding-right: 1.25rem;
     background: url(../../img/heart-ico.svg) no-repeat right;
     margin-right: 1rem;
+    border: none;
   }
   
   .top__card-comments {
@@ -68,6 +69,13 @@
   
   .top__card-more:hover {
     opacity: 0.75;
+  }
+
+  .top__card-img-full {
+    height: 150%;
+    width: 150%;
+    border-radius: 15px;
+    background:none;
   }
   
   /* Top end */

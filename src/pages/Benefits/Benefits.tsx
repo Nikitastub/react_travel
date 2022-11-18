@@ -21,7 +21,7 @@ export const Benefits = () =>
                         <p className="benefits__card-desc">
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                         </p>
-                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' />
+                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' type='link'/>
                     </div>
                     <div className="benefits__card">
                         <div className="benefits__card-img">
@@ -33,7 +33,7 @@ export const Benefits = () =>
                         <p className="benefits__card-desc">
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                         </p>
-                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' />
+                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' type='link'/>
                     </div>
                     <div className="benefits__card">
                         <div className="benefits__card-img">
@@ -45,7 +45,7 @@ export const Benefits = () =>
                         <p className="benefits__card-desc">
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                         </p>
-                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' />
+                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' type='link'/>
                     </div>
                 </div>
             </div>

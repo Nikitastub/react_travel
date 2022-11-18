@@ -13,12 +13,12 @@ export const Top = () =>
             <div className="wrapper-full">
                 <SectionTitle text='Today top places to visit' />
                 <div className="top__cards">
-                    <TopCard src={top1} likes={45} comments={4} />
-                    <TopCard src={top2} likes={65} comments={9} />
-                    <TopCard src={top3} likes={34} comments={4} />
-                    <TopCard src={top4} likes={15} comments={15} />
-                    <TopCard src={top5} likes={27} comments={11} />
-                    <TopCard src={top6} likes={69} comments={9} />
+                    <TopCard src={top1} likesCount={45} comments={4}/>
+                    <TopCard src={top2} likesCount={65} comments={9} />
+                    <TopCard src={top3} likesCount={34} comments={4} />
+                    <TopCard src={top4} likesCount={15} comments={15}/>
+                    <TopCard src={top5} likesCount={27} comments={11}/>
+                    <TopCard src={top6} likesCount={69} comments={9}/>
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@ export const Tours = () =>
                             <p className="tours__tour-desc">
                                 Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
                             </p>
-                            <Link linkName='VIEW PREFECTURE' classes='tours__tour-more link-shape' />
+                            <Link linkName='VIEW PREFECTURE' classes='tours__tour-more link-shape' type='link' />
                         </div>
                     </div>
                     <div className="tours__tour">
@@ -29,7 +29,7 @@ export const Tours = () =>
                             <p className="tours__tour-desc">
                                 Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
                             </p>
-                            <Link linkName='VIEW NEIGHBORHOOD' classes='tours__tour-more link-shape' />
+                            <Link linkName='VIEW NEIGHBORHOOD' classes='tours__tour-more link-shape' type='link' />
                         </div>
                         <div className="tours__tour-img">
                             <img src={tour2} alt="Featured Neighborhood: Kyoto’s Arashiyama" className="tours__tour-pic" />
