@@ -1,11 +1,10 @@
 import React from 'react';
-import '../App.css';
-import  church from '../img/church-ico.svg'
-import  man from '../img/man-ico.svg'
-import  shop from '../img/shop-ico.png'
+import { Link } from '../../components/Link/Link';
+import  church from '../../img/church-ico.svg'
+import  man from '../../img/man-ico.svg'
+import  shop from '../../img/shop-ico.png'
 
-export function Benefits() {
-  return (
+export const Benefits = () =>
     <section className="benefits">
             <div className="benefits__wrap">
                 <h2 className="benefits__title">
@@ -22,9 +21,7 @@ export function Benefits() {
                         <p className="benefits__card-desc">
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                         </p>
-                        <a href="#" className="benefits__card-more base-link link-shape">
-                            LEARN MORE
-                        </a>
+                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' type='link'/>
                     </div>
                     <div className="benefits__card">
                         <div className="benefits__card-img">
@@ -36,9 +33,7 @@ export function Benefits() {
                         <p className="benefits__card-desc">
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                         </p>
-                        <a href="#" className="benefits__card-more base-link link-shape">
-                            LEARN MORE
-                        </a>
+                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' type='link'/>
                     </div>
                     <div className="benefits__card">
                         <div className="benefits__card-img">
@@ -50,12 +45,8 @@ export function Benefits() {
                         <p className="benefits__card-desc">
                             Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                         </p>
-                        <a href="#" className="benefits__card-more base-link link-shape">
-                            LEARN MORE
-                        </a>
+                        <Link linkName='LEARN MORE' classes='benefits__card-more link-shape' type='link'/>
                     </div>
                 </div>
             </div>
         </section>
-    );
-}

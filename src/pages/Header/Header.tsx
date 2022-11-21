@@ -1,9 +1,15 @@
-import React from 'react';
-import '../App.css';
-import headerLogo from '../img/odigo-logo.svg'
+import React, { useState } from 'react';
+import { LoginForm } from '../../components/Modal/LoginFormModal/LoginForm';
+import { Modal } from '../../components/Modal';
+import headerLogo from '../../img/odigo-logo.svg'
 
-export function Header() {
-  return (
+export const Header = () => {
+    const [modal, setModal] = useState(false);
+    return(
+        <>
+    {modal && <Modal title="Sign In" onClose={() => setModal(false)}>
+    <LoginForm switchModal={() => setModal(false)}/>
+    </Modal>}
     <div className="header">
     <div className="wrapper">
         <div className="header__wrapper">
@@ -24,12 +30,23 @@ export function Header() {
                         <a href='#videos' className="header__link">Videos</a>
                     </li>
                     <li className="header__item">
-                        <a href="#" className="header__link">Sign in</a>
+                        <a onClick={() => setModal(true)} href="#" className="header__link">Sign in</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
   </div>
-    );
+  </>
+  )
 }
+
+const headerPlace = () => {
+    const header = document.querySelector('.header');
+    window.onscroll = () => {
+        window.pageYOffset > 50 ? header?.classList.add('header_active') : header?.classList.remove('header_active');
+    };
+}
+
+headerPlace();
+

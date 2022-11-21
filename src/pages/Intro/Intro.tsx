@@ -1,8 +1,7 @@
 import React from 'react';
-import '../App.css';
 
-export function Intro() {
-  return (
+
+export const Intro = () => 
     <section className="intro">
         <div className="wrapper">
             <h1 className="intro__title">
@@ -22,5 +21,3 @@ export function Intro() {
             </form>
         </div>
     </section>
-    );
-}

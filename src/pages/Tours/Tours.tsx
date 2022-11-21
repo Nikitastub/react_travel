@@ -1,10 +1,9 @@
 import React from 'react';
-import '../App.css';
-import  tour1 from '../img/tour-1.jpeg'
-import  tour2 from '../img/tour-2.jpeg'
+import { Link } from '../../components/Link/Link';
+import  tour1 from '../../img/tour-1.jpeg'
+import  tour2 from '../../img/tour-2.jpeg'
 
-export function Tours() {
-  return (
+export const Tours = () =>
     <div className="tours" id="articles">
             <div className="wrapper-full">
                 <div className="tours__wrap">
@@ -19,7 +18,7 @@ export function Tours() {
                             <p className="tours__tour-desc">
                                 Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
                             </p>
-                            <a href="#" className="tours__tour-more base-link link-shape">VIEW PREFECTURE</a>
+                            <Link linkName='VIEW PREFECTURE' classes='tours__tour-more link-shape' type='link' />
                         </div>
                     </div>
                     <div className="tours__tour">
@@ -30,7 +29,7 @@ export function Tours() {
                             <p className="tours__tour-desc">
                                 Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open the door, 
                             </p>
-                            <a href="#" className="tours__tour-more base-link link-shape">VIEW NEIGHBORHOOD</a>
+                            <Link linkName='VIEW NEIGHBORHOOD' classes='tours__tour-more link-shape' type='link' />
                         </div>
                         <div className="tours__tour-img">
                             <img src={tour2} alt="Featured Neighborhood: Kyoto’s Arashiyama" className="tours__tour-pic" />
@@ -39,5 +38,3 @@ export function Tours() {
                 </div>
             </div>
         </div>
-    );
-}

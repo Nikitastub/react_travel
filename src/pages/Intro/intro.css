@@ -1,0 +1,64 @@
+/* Intro start */
+
+.intro {
+    min-height: 100vh;
+    background: url(../../img/Hero-bg.jpeg) no-repeat center;
+    background-size: cover;
+    padding-top: 263px;
+  }
+  
+  .intro__title {
+    margin-bottom: 1.5rem;
+    max-width: 38.75rem;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    color: var(--white-color);
+  }
+  
+  .intro__subtitle {
+    margin-bottom: 3.5rem;
+    max-width: 34rem;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--white-color);
+  }
+  
+  .search-form__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .search-form__field {
+    margin-right: 3.75rem;
+    padding-left: 2.75rem;
+    width: 18.5rem;
+    background: url(../../img/circle-ico.svg) no-repeat left center;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--white-color);
+  }
+  
+  .search-form__field::placeholder {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    color: var(--white-color);
+  }
+  
+  .search-form__submit {
+    background: var(--link-color);
+    padding: 1rem 2.5rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    border: 0;
+  }
+  
+  .search-form__submit:hover {
+    opacity: 0.9;
+  }
+  
+  /* Intro end */

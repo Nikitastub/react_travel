@@ -1,16 +1,13 @@
-import React from 'react';
-import './App.css';
-import { Header } from './components/Header';
-import { Intro } from './components/Intro';
-import { Benefits } from './components/Benefits';
-import { Places } from './components/Places';
-import { Tours } from './components/Tours';
-import { Top } from './components/Top';
-import { Videos } from './components/Videos';
-import { Footer } from './components/Footer';
+import { Header } from './pages/Header';
+import { Intro } from './pages/Intro';
+import { Benefits } from './pages/Benefits';
+import { Places } from './pages/Places';
+import { Tours } from './pages/Tours';
+import { Top } from './pages/Top';
+import { Videos } from './pages/Videos';
+import { Footer } from './pages/Footer';
 
-function App() {
-  return (
+export const App = () =>
   <>
     <Header />
     <div className="main">
@@ -23,7 +20,5 @@ function App() {
     </div>
     <Footer />
   </>
-  );
-}
 
 export default App;
