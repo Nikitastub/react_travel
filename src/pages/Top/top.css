@@ -19,6 +19,12 @@
     position: relative;
     margin-bottom: 2.75rem;
   }
+
+  .top__card-img{
+    width: 386px;
+    height: 377px;
+    object-fit: cover;
+  }
   
   .top__card-info {
     position: absolute;
@@ -58,6 +64,7 @@
     color: var(--white-color);
     padding-right: 1.5rem;
     background: url(../../img/comment-ico.svg) no-repeat right;
+    border: none;
   }
   
   .top__card-desc {
@@ -71,11 +78,43 @@
     opacity: 0.75;
   }
 
+  .full-img {
+    position: relative;
+  }
+
   .top__card-img-full {
-    height: 150%;
-    width: 150%;
+    height: 40vw;
     border-radius: 15px;
     background:none;
+  }
+
+  .left-arrow {
+    max-height: 7vw;
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    border: 0;
+    background: transparent;
+  }
+
+  .right-arrow {
+    max-height: 0;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    border: 0;
+    background: transparent;
+  }
+
+  .arrow {
+    width: 5vw;
+  }
+
+  .comments-modal {
+    height: 30vw;
+    width:  50vw;
+    background: rgb(215, 209, 209);
+    border-radius: 20px;
   }
   
   /* Top end */

@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { LoginForm } from '../../components/Modal/LoginFormModal/LoginForm';
+import { Modal } from '../../components/Modal';
 import headerLogo from '../../img/odigo-logo.svg'
 
-interface HeaderFormProps {
-    switchModal: () => void
-}
-
-export const Header = ({ switchModal }: HeaderFormProps) => {
-    const [modalImg, setModalImg] = useState(false);
+export const Header = () => {
+    const [modal, setModal] = useState(false);
     return(
+        <>
+    {modal && <Modal title="Sign In" onClose={() => setModal(false)}>
+    <LoginForm switchModal={() => setModal(false)}/>
+    </Modal>}
     <div className="header">
     <div className="wrapper">
         <div className="header__wrapper">
@@ -28,16 +30,23 @@ export const Header = ({ switchModal }: HeaderFormProps) => {
                         <a href='#videos' className="header__link">Videos</a>
                     </li>
                     <li className="header__item">
-                        <a onClick={() => switchModal()} href="#" className="header__link">Sign in</a>
+                        <a onClick={() => setModal(true)} href="#" className="header__link">Sign in</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
   </div>
+  </>
   )
 }
-function useState(arg0: boolean): [any, any] {
-    throw new Error('Function not implemented.');
+
+const headerPlace = () => {
+    const header = document.querySelector('.header');
+    window.onscroll = () => {
+        window.pageYOffset > 50 ? header?.classList.add('header_active') : header?.classList.remove('header_active');
+    };
 }
+
+headerPlace();
 
